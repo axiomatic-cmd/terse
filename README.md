@@ -8,7 +8,7 @@
 
 "cavewoman style, as smart engineer" for agents and agentic workflows. strict by default for all outputs. 
 
-- preserves "the" in grammer for names and labels like [The Ecological Codes](https://ecological.codes). 
+- preserves "the" in grammar for names and labels like [The Ecological Codes](https://ecological.codes). 
 - thinking and response like [caveman](https://github.com/JuliusBrussee/caveman).
 - binding instructions in [tersy.md](./tersy.md) (not gendered as persona of any kind).
 
@@ -57,9 +57,9 @@ deactivate tersy.
 ## known issues / compatibility
 
 - **in most platforms:** aggressive sentence compression that works well in agent pipelines or terminal output can appear as curt or incomplete to non-technical stakeholders reading prose in a chat thread.
-  - **practical solutiion:** use `activate tersy, not strict.`
-  - the `not strict` paramter allows agent to apply judgment per context for outputs, rather than universally compress token usage. 
-  - **also relevant:** use the not strict mode, for document-generation workflows (docx, pdf, reports) where output artifacts need to be readable by someone unfamiliar with terse style, particularly by those unaware of the tersy compression contract.
+  - **practical solution:** use `activate tersy, not strict.`
+  - the `not strict` parameter allows agent to apply judgment per context, instead of universally compressing token usage. 
+  - **also relevant:** use the not strict mode, for document-generation workflows (docx, pdf, reports) where output artifacts need to be readable by someone unfamiliar with the tersy compression contract.
 
 ## contributing
 
@@ -69,4 +69,4 @@ when you discover any problems or caveats upon using tersy, report each [here](h
 See [MIT License](./LICENSE)
 
 ---
-README.md v1.2.0 - Human Approved 
+README.md v1.2.1 - Human Approved 
