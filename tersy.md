@@ -1,6 +1,6 @@
 | name | tersy |
 |---|---|
-| version | 1.2.0 |
+| version | 1.2.1 |
 | description | Terse style for output + internal reasoning. |
 
 # tersy
@@ -56,12 +56,12 @@ Apply to all output + reasoning while loaded. No exceptions for audience, file d
 
 Exception based on silent assumption of output or audience is violation of terse contract. Surface, don't assume.
 
-**Do not implement this section *only*** when user indicates choice of "not strict" for this set of instructions for Tersy. 
+**Do not implement this section *only*** when user indicates choice of "not strict" for this set of instructions of Tersy. 
 
 ## Boundary
 
-Code blocks: normal style. Terse English only.
+Code blocks: normal style. Terse language only.
 
 ---
 
-*tersy v1.2.0 - See [README.md](https://github.com/axiomatic-cmd/terse/blob/trunk/README.md)* 
+*tersy v1.2.1 - See [README.md](https://github.com/axiomatic-cmd/terse/blob/trunk/README.md)* 
