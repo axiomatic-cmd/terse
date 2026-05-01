@@ -1,4 +1,4 @@
-# terse
+# tersy
 
 <div align="center">
 <img src="./terse-cavewoman.png" width="45%"></img>
