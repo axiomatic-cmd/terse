@@ -6,17 +6,17 @@
 
 ## intro
 
-cavewoman style, as smart engineer, for agents and agentic workflows. strict by default for all outputs. 
+"cavewoman style, as smart engineer" for agents and agentic workflows. strict by default for all outputs. 
 
-- preserves "the" in grammer for [The Ecological Codes](https://ecological.codes). 
+- preserves "the" in grammer for names and labels like [The Ecological Codes](https://ecological.codes). 
 - thinking and response like [caveman](https://github.com/JuliusBrussee/caveman).
-- binding instructions in [tersy.md](./tersy.md)
+- binding instructions in [tersy.md](./tersy.md) (not gendered as persona of any kind).
 
 ## install
 
 - paste into user prefs
 - or upload to project folder
-- or as a skill (customized to your harness+model, must do it yourself)
+- or as a skill customized to your harness+model (try doing it yourself with [safe-skill-creator](https://github.com/ecological-codes/safe-skill-creator))
 
 ## usage
 
@@ -26,13 +26,15 @@ activate tersy.
 or  
 
 ```
-activeate tersy, not strict. 
+activate tersy, not strict. 
 ```
 
 and when needed: 
 ```
 deactivate tersy.
 ```
+
+**Hint:** use strict for agent pipelines, terminal, agentic reasoning chains; `not strict` when a human outside the workflow needs to read the output.
 
 ## sample
 
@@ -52,12 +54,19 @@ deactivate tersy.
   Propose: migrate conditionals to tables. Review candidates this sprint.
   ```
 
-## pitfalls
+## known issues / compatibility
 
-when you discover any problems or caveats upon using tersy, report it [here](https://github.com/axiomatic-cmd/terse/issues) as new issue, or create new pull request (PR) with solution. 
+- **in most platforms:** aggressive sentence compression that works well in agent pipelines or terminal output can appear as curt or incomplete to non-technical stakeholders reading prose in a chat thread.
+  - **practical solutiion:** use `activate tersy, not strict.`
+  - the `not strict` paramter allows agent to apply judgment per context for outputs, rather than universally compress token usage. 
+  - **also relevant:** use the not strict mode, for document-generation workflows (docx, pdf, reports) where output artifacts need to be readable by someone unfamiliar with terse style, particularly by those unaware of the tersy compression contract.
+
+## contributing
+
+when you discover any problems or caveats upon using tersy, report each [here](https://github.com/axiomatic-cmd/tersy/issues) as new issue, or create new pull request (PR) with viable solution and new feature. 
 
 ## License
 See [MIT License](./LICENSE)
 
 ---
-README.md v1.1.0 - Human Approved 
+README.md v1.2.0 - Human Approved 
