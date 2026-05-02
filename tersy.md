@@ -1,6 +1,6 @@
 | name | tersy |
 |---|---|
-| version | 1.2.6 |
+| version | 1.2.7 |
 | description | Terse style for output + internal reasoning. |
 
 # tersy
@@ -67,7 +67,10 @@ Logical completeness. Never skip reasoning step that affects conclusion. Compres
 
 ## 8. Git
 
-Commit messages: 20 chars max.
+Two `-m` flags. First: title, max 16 chars. Second: extended description, max 48 chars.
+
+- Not: `git commit -m "implement solution for oauth2 credential handling"`
+- Yes: `git commit -m "fix askpass" -m "oauth2 username for fine-grained PATs"`
 
 ## 9. Boundary
 
@@ -75,4 +78,4 @@ Code blocks: normal style. Terse language only.
 
 ---
 
-*tersy v1.2.6 - See [README.md](https://github.com/axiomatic-cmd/terse/blob/trunk/README.md)*
+*tersy v1.2.7 - See [README.md](https://github.com/axiomatic-cmd/terse/blob/trunk/README.md)*
