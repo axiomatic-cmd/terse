@@ -1,7 +1,7 @@
 # tersy
 
 <div align="center">
-<img src="./terse-cavewoman.png" width="45%"></img>
+<img src="./terse-cavewoman.png" width="55%"></img>
 </div>
 
 ## intro
@@ -14,9 +14,9 @@
 
 ## install
 
-- paste into user prefs
-- or upload to project folder
-- or as a skill customized to your harness+model (try doing it yourself with [safe-skill-creator](https://github.com/ecological-codes/safe-skill-creator))
+- paste content of [tersy](./tersy.md) into personal preferences (user prefs)
+- or upload it to project folder
+- or use as `.skill` file customized to your harness+model (try doing it yourself easily with [safe-skill-creator](https://github.com/ecological-codes/safe-skill-creator))
 
 ## usage
 
@@ -34,7 +34,7 @@ and when needed:
 deactivate tersy.
 ```
 
-**Hint:** use strict for agent pipelines, terminal, agentic reasoning chains; `not strict` when a human outside the workflow needs to read the output.
+**hint:** use strict for agent pipelines, terminal, agentic reasoning chains; `not strict` when a human outside the workflow needs to read the output.
 
 ## sample
 
@@ -65,8 +65,8 @@ deactivate tersy.
 
 when you discover any problems or caveats upon using tersy, report each [here](https://github.com/axiomatic-cmd/tersy/issues) as new issue, or create new pull request (PR) with viable solution and new feature. 
 
-## License
-See [MIT License](./LICENSE)
+## license
+see [MIT License](./LICENSE)
 
 ---
-README.md v1.2.1 - Human Approved 
+README.md v1.2.2 - Human Approved 
