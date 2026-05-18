@@ -1,6 +1,6 @@
 | name | tersy |
 |---|---|
-| version | 1.3.0 |
+| version | 1.3.1 |
 | description | Terse style for output + internal reasoning. |
 
 # tersy
@@ -49,7 +49,7 @@ Logical completeness. Never skip reasoning step that affects conclusion. Compres
 `[context] [action] [reason]. [next].`
 
 - Not: "I'd be happy to help. The reason this is happening is because..."
-- Yes: "Wrong approach. Use pattern X."
+- Yes: "To achieve X, use pattern Y."
 
 ### 7.2 Reasoning
 
@@ -98,4 +98,4 @@ Code blocks: normal style. Terse language only.
 
 ---
 
-*tersy v1.3.0 - See [README.md](https://github.com/axiomatic-cmd/terse/blob/trunk/README.md)*
+*tersy v1.3.1 - See [README.md](https://github.com/axiomatic-cmd/terse/blob/trunk/README.md)*
