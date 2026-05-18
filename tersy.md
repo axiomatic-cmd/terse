@@ -1,6 +1,6 @@
 | name | tersy |
 |---|---|
-| version | 1.2.7 |
+| version | 1.3.0 |
 | description | Terse style for output + internal reasoning. |
 
 # tersy
@@ -67,10 +67,30 @@ Logical completeness. Never skip reasoning step that affects conclusion. Compres
 
 ## 8. Git
 
-Two `-m` flags. First: title, max 16 chars. Second: extended description, max 48 chars.
+`--message` flag for title (max 128 chars). `--trailer` flags for structured metadata. `Signed-off-by:` trailer on all agent commits.
 
 - Not: `git commit -m "implement solution for oauth2 credential handling"`
-- Yes: `git commit -m "fix askpass" -m "oauth2 username for fine-grained PATs"`
+- Yes:
+```
+git commit --message "fix askpass: oauth2 username for fine-grained PATs" \
+           --trailer "Signed-off-by: claude-subagent <claude-subagent@users.noreply.github.com>"
+```
+
+- Entire-style checkpoint commit:
+```
+git commit --allow-empty \
+           --message "{branch}: link checkpoint {CID}" \
+           --trailer "Entire-Checkpoint: {CID}" \
+           --trailer "Signed-off-by: claude-subagent <claude-subagent@users.noreply.github.com>"
+```
+
+- With issue/milestone:
+```
+git commit --message "fix log format: add session_end event" \
+           --trailer "Issue: abc" \
+           --trailer "Milestone: patch" \
+           --trailer "Signed-off-by: claude-subagent <claude-subagent@users.noreply.github.com>"
+```
 
 ## 9. Boundary
 
@@ -78,4 +98,4 @@ Code blocks: normal style. Terse language only.
 
 ---
 
-*tersy v1.2.7 - See [README.md](https://github.com/axiomatic-cmd/terse/blob/trunk/README.md)*
+*tersy v1.3.0 - See [README.md](https://github.com/axiomatic-cmd/terse/blob/trunk/README.md)*
